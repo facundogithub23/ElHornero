@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  crossorigin="anonymous">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('index') }}">El Hornero Tradición</a> 
+            <a class="navbar-brand mr-auto" href="{{ url_for('lista_socios') }}">Lista de Socios</a>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control form-input" placeholder="Buscar" aria-label="Buscar">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-white">
+                            <i class="fas fa-search text-primary"></i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div id="noResultsMessage" style="color: red; display: none;">No se encontró socio.</div>
+
+        </div>
+    </nav>
+    
+    <div class="custom-container">
+        <h2>Formulario de Registro</h2>
+        <form id="form-register" onsubmit="registrarSocio(); return false;">
+            <input type="text" name="nombre" id="name" autocomplete="name" required placeholder="Ingrese un nombre" class="form-input"><br>
+            <input type="text" name="dni" id="dni" autocomplete="document-id" required placeholder="Ingrese DNI" class="form-input"><br>
+            <input type="text" name="direccion" id="dirección" autocomplete="street-address" required placeholder="Ingresá la dirección" class="form-input"><br>
+            <input type="text" name="telefono" id="telefono" autocomplete="tel" required placeholder="Ingresá el teléfono" class="form-input"><br>
+            <input type="email" name="email" id="email" autocomplete="email" required placeholder="Ingresá el email" class="form-input"><br>
+            <input type="text" name="num_socio" id="N°Socio" autocomplete="n°socio" placeholder="Ingrese N° de Socio" class="form-input"><br>
+            <input type="text" name="fecha_Nac" id="fecha_Nac" autocomplete="bday" required placeholder="Ingresá la fecha de nacimiento" class="form-input"><br>
+            <button type="submit" class="btn-submit">Registrar</button>
+        </form>
+        <div id="success-message" style="display: none;">Registro exitoso</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/listaSocios.js') }}"></script>
+</body>
+</html>

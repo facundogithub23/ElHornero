@@ -1,0 +1,131 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 166, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del Navbar */
+.navbar {
+    background-color: rgb(0, 166, 255);
+    color: white;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 20px;
+}
+
+/* Estilos del contenedor principal */
+.custom-container {
+    text-align: center;
+    margin-top: 20px; /* Ajustado para reducir el espacio */
+}
+
+/* Estilos del formulario */
+#form-register {
+    max-width: 50%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(0, 166, 255);
+    color: white;
+    margin: 10px auto;
+}
+
+/* Estilos del título "Lista de Clientes" */
+h2.mt-3 {
+    margin-top: 40px; /* Ajusta el valor según tus preferencias */
+    margin-bottom: 40px; /* Puedes ajustar el espacio en la parte inferior si es necesario */
+    text-align: center; /* Centra el título horizontalmente */
+}
+
+
+
+/* Estilos de los campos del formulario */
+.form-input {
+    width: 100%;
+    height: 40px;
+    padding: 12px 6px;
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Estilos del botón de envío */
+.btn-submit {
+    width: 100%;
+    height: 40px;
+    padding: 12px 6px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+
+.btn-submit:hover {
+    background: #45a049;
+}
+
+/* Estilos de la tabla de clientes */
+.table {
+    background-color: #333; /* Cambiado a un fondo oscuro para la tabla */
+    color: #fff; /* Texto blanco para contrastar */
+    margin-top: 20px; /* Ajustado para separar la tabla del título */
+    width: 80%; /* Ajustado para centrar la tabla y agregar espacio a los lados */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Agregado un borde redondeado */
+}
+
+/* Estilos de las celdas de la tabla */
+.table th,
+.table td {
+    background-color: #000; /* Cambiado a un fondo oscuro para las celdas */
+    color: #fff; /* Texto blanco para contrastar */
+    padding: 12px; /* Ajustado para el espacio interno de las celdas */
+}
+
+/* Estilo adicional para el título de la tabla */
+.table th {
+    font-size: 18px;
+    padding-bottom: 15px; /* Ajustado para aumentar la separación del título de la tabla */
+}
+#tabla-socios.table-striped {
+    background-color: white;
+    color: black; /* Esto cambia el color del texto a blanco para que sea legible en fondo negro */
+}
+
+
+.editar-btn {
+    background-color: #0210cf ;
+    /* Otros estilos específicos si es necesario */
+}
+
+.eliminar-btn {
+    background-color: #f80000;
+    /* Otros estilos específicos si es necesario */
+}
+
+/* Otros estilos que puedas tener */
+.fa-edit {
+    color: white;
+}
+
+.fa-trash {
+    color: white;
+}
