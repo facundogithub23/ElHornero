@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+*.pyc
+*.pyo
+__pycache__/
+
+# IDEs
+.idea/
+.vscode/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary files
+*.log
+*.swp
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+
+# Compiled files for JavaScript
+*.min.js
+
+# Compiled files for CSS
+*.min.css
+
+# Dependency directories
+/jspm_packages/
+/bower_components/
+/vendor/
+
+# Docker
+docker-compose.yml
+docker-compose.override.yml
